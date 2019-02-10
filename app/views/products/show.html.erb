@@ -1,7 +1,12 @@
  <%= @product.name %><br/>
+
  <%= @product.description %><br/>
+ 
  <%= @product.price %>
 
+<% @product.photos.each do |photo| %>
+  <%= image_tag(photo.url, style: "width: 1000px;") %><br>
+<% end %>
 
 <%= form_for :comment, url:comments_path do |f| %>
 <%= render 'comments/form', f:f%>

@@ -12,6 +12,14 @@ ActiveAdmin.register Product do
 #   permitted
 # end
 
-permit_params :name,:description, :price
-
+permit_params :name,:description, :price, photos: []
+form(html: { multipart: true }) do |f|
+    f.inputs do
+      f.input :name
+      f.input :price
+      f.input :description
+      f.file_field :photos, multiple: true
+    end
+   f.actions
+end
 end
