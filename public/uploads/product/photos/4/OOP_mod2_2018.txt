@@ -1,0 +1,631 @@
+1)﻿* Результат виконання наступного Java коду співпадає із значенням виразу: List l = Arrays.asList(new String[]{"one", "", "three"}); System.out.print(l.size());
+)0
+)3
+)Error
+)2
+
+2)* Результат виконання наступного Java коду співпадає із значенням виразу: Map<String, String> m = new HashMap<>(); m.put("language", "Java"); System.out.print(m.keySet());
+)language
+)[Java]
+)[language]
+)Java
+
+3)* Результат виконання наступного Java коду співпадає із значенням виразу: List<String> l = Arrays.asList(new String[]{"one", "", "three"}); l.add("four"); System.out.print(l.size());
+)4
+)java.lang.UnsupportedOperationException
+)3
+)null
+
+4)* Результат виконання наступного Java коду співпадає із значенням виразу: String s = "Hello"; System.out.println(s.charAt(0));
+)H
+)null
+)e
+)h
+
+5)* Результат виконання наступного Java коду співпадає із значенням виразу: (new int[] { 1, 2, 3 })[-1]
+)java.lang.ArrayIndexOutOfBoundsException
+)java.lang.UnsupportedOperationException
+)3
+)2
+
+6)* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new ArrayList(Arrays.asList(new String[]{"one", "", "three"})); System.out.print(l.subList(1, 2));
+)[]
+)[_]
+)[_, three]
+)[one, _]
+
+7)* Результат виконання наступного Java коду співпадає із значенням виразу: List<Object> l = new LinkedList<>(); l.add("Object"); System.out.print(l.get(0));
+)Object
+)Obj
+)null
+)0
+
+8)* Результат виконання наступного Java коду співпадає із значенням виразу: String s = "Hello"; System.out.println(s.indexOf('e'));
+)1
+)2
+)e
+)-4
+
+9)* Результат виконання наступного Java коду співпадає із значенням виразу: Set<String> s = new HashSet<>(); s.add("world"); s.clear(); System.out.print(s);
+){}
+)[]
+)()
+)null
+
+10)* Результат виконання наступного Java коду співпадає із значенням виразу: String s = "Hello"; System.out.println(s.concat("there"));
+)Hello
+)there
+)null
+)Hellothere
+
+11)* Результат виконання наступного Java коду співпадає із значенням виразу: Set<String> s = new HashSet<>(); s.add("hello"); s.add("world"); s.remove("hello"); System.out.print(s);
+)[]
+)java.lang.UnsupportedOperationException
+)null
+)[world]
+
+12)* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new ArrayList(); System.out.print(l.get(0));
+)java.lang.UnsupportedOperationException
+)-1
+)null
+)java.lang.IndexOutOfBoundsException
+
+13)* Результат виконання наступного Java коду співпадає із значенням виразу: Set<String> s = new TreeSet<>(); s.add("hello"); s.add("world"); System.out.print(s.toString());
+)[world, hello]
+)[]
+)[hello, world]
+)[hello]
+
+14)* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new ArrayList(); l.add("Object"); System.out.print(l.contains(new Object()));
+)false
+)0
+)null
+)_f_
+
+15)* Результат виконання наступного Java коду співпадає із значенням виразу: Map<String, String> m = new HashMap<>(); m.put("language", "Java"); System.out.print(m);
+){language=>Java}
+)[language=Java]
+)HashMap
+){language=Java}
+
+16)* Результат виконання наступного Java коду співпадає із значенням виразу: TreeSet<String> s = new TreeSet<>(); s.add("world"); s.add("hello"); System.out.print(s.first());
+)hello
+)world
+)null
+)1
+
+17)* Результат виконання наступного Java коду співпадає із значенням виразу: Set<String> s = new HashSet<>(); s.add("world"); s.add("world"); System.out.print(s);
+)[world]
+)[world, world]
+)[]
+)java.lang.UnsupportedOperationException
+
+18)* Результат виконання наступного Java коду співпадає із значенням виразу: (new Object(){public float field = 4;}).getClass().getField("field").getType()
+)double
+)public
+)field
+)float
+
+19)* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new LinkedList(); l.add("Object"); System.out.print(l.get(1));
+)null
+)0
+)-1
+)java.lang.IndexOutOfBoundsException
+
+
+20)* Результат виконання наступного Java коду співпадає із значенням виразу: List<String> l = new LinkedList<>(); l.add("Object"); System.out.print(l.get(0));
+)null
+)object
+)obj
+)Object
+
+21)* Результат виконання наступного Java коду співпадає із значенням виразу: Set<String> s = new TreeSet<>(); s.add("world"); s.add("hello"); System.out.print(s.toString());
+)[hello, world]
+)[]
+)[world, hello]
+)1
+
+22)* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new ArrayList(); l.add("Object"); System.out.print(l.get(1));
+)java.lang.IndexOutOfBoundsException
+)null
+)0
+)-1
+
+23)* Результат виконання наступного Java коду співпадає із значенням виразу: String s = "Hello"; System.out.println(s.equalsIgnoreCase("hello"));
+)-1
+)true
+)0
+)1
+
+24)* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new ArrayList(); System.out.print(l.isEmpty());
+)1
+)false
+)true
+)T
+
+25)* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new LinkedList(); System.out.print(l.size());
+)null
+)-1
+)java.lang.UnsupportedOperationException
+)0
+
+26)* Результат виконання наступного Java коду співпадає із значенням виразу: String s = "Hello"; System.out.println(s.charAt(-1));
+)0
+)-1
+)null
+)java.lang.StringIndexOutOfBoundsException
+
+27)* Результат виконання наступного Java коду співпадає із значенням виразу: ArrayList.class.getSuperclass().getName()
+)java.lang.UnsupportedOperationException
+)1
+)java.util.AbstractList
+)null
+
+28)* Результат виконання наступного Java коду співпадає із значенням виразу: System.out.println((new Object(){int x = 1; int getX(){return x;}}).getX());
+)1
+)0
+)java.lang.UnsupportedOperationException
+)null
+
+29)* Результат виконання наступного Java коду співпадає із значенням виразу: Map<String, String> m = new HashMap<>(); m.put("language", "Java"); System.out.print(m.values());
+)[language]
+)[Java]
+)[]
+)[null]
+
+30)* Результат виконання наступного Java коду співпадає із значенням виразу: String s = "Hello"; System.out.println(s.indexOf('h'));
+)null
+)java.lang.UnsupportedOperationException
+)-1
+)0
+
+31)* Результат виконання наступного Java коду співпадає із значенням виразу: String s = "Hello"; System.out.println(s.equals("hello"));
+)true
+)T
+)false
+)F
+
+32)* Результат виконання наступного Java коду співпадає із значенням виразу: Map<String, String> m = new HashMap<>(); m.put("language", "Java"); System.out.print(m.get("language"));
+)language
+)Java
+)[]
+)1
+
+33)* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new ArrayList(Arrays.asList(new String[]{"one", "", "three"})); l.get(-1); System.out.print(l.size());
+)[]
+)-1
+)java.lang.ArrayIndexOutOfBoundsException
+)0
+
+34)* Результат виконання наступного Java коду співпадає із значенням виразу: Map<String, String> m = new HashMap<>(); m.put("language", "Java"); System.out.print(m.entrySet());
+){language=Java}
+){}
+)[language=Java]
+)[]
+
+35)* Результат виконання наступного Java коду співпадає із значенням виразу: Map<String, String> m = new HashMap<>(); m.put("language", "Java"); System.out.print(m.get("Java"));
+)0
+)-1
+)nil
+)null
+
+36)* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new ArrayList(Arrays.asList(new String[]{"one", "", "three"})); l.clear(); System.out.print(l.size());
+)nil
+)0
+)null
+)-1
+
+37)* Результат виконання наступного Java коду співпадає із значенням виразу: System.out.println((new Object(){public String toString(){return "Hello";}}));
+)null
+)Hello
+)java.lang.UnsupportedOperationException
+)Object
+
+38)* Результат виконання наступного Java коду співпадає із значенням виразу: Arrays.equals(new int[] { 1 }, new int[] { 1 })
+)Object
+)T
+)F
+)true
+
+39)* Результат виконання наступного Java коду співпадає із значенням виразу: Map<String, String> m = new HashMap<>(); m.put("language", "Java"); m.clear(); System.out.print(m.isEmpty());
+)true
+)0
+)NO
+)YES
+
+40)* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new LinkedList(); l.add("Object"); System.out.print(l.size());
+)0
+)1
+)nil
+)null
+
+41)* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new ArrayList(Arrays.asList(new String[]{"one", "", "three"})); l.remove(""); System.out.print(l.size());
+)3
+)1
+)2
+)0
+
+42* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new ArrayList(); l.add("Object"); System.out.print(l.get(0).getClass());
+)Character
+)Object
+)null
+)class java.lang.String
+
+43* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new ArrayList(); l.add("Object"); System.out.print(l.contains("Object"));
+)true
+)T
+)F
+)false
+
+44* Результат виконання наступного Java коду співпадає із значенням виразу: (new Runnable(){public void run(){System.out.println("running");}}).run();
+)java.lang.UnsupportedOperationException
+)null
+)Object
+)running
+
+45* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new ArrayList(Arrays.asList(new String[]{"one", "", "three"})); System.out.print(l.subList(0, 2));
+)[]
+)[ ]
+)[one, ]
+)["three"]
+
+46* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new ArrayList(Arrays.asList(new String[]{"one", "", "three"})); l.remove(""); System.out.print(l.size());
+)1
+)3
+)0
+)2
+
+47* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new ArrayList(Arrays.asList(new String[]{"one", "", "three"})); l.add(1, new Object()); System.out.print(l.get(0));
+)three
+)one
+)""
+)_
+
+48* Результат виконання наступного Java коду співпадає із значенням виразу: List<String> l = new LinkedList<>(Arrays.asList(new String[]{"one", "_", "three"})); l.add(1, new Object()); System.out.print(l.get(2));
+)one
+)three
+)_
+)-1
+
+49* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new ArrayList(Arrays.asList(new String[]{"one", "", "three"})); System.out.print(l.subList(0, 3));
+)[]
+)[one, ]
+)[one, , three]
+)null
+
+50* Результат виконання наступного Java коду співпадає із значенням виразу: ArrayList.class.getSuperclass().getSuperclass().getSuperclass().getName()
+)java.lang.Object
+)java.lang.UnsupportedOperationException
+)null
+)class
+
+51* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new ArrayList(); System.out.print(l.size());
+)1
+)-1
+)null
+)0
+
+52* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new ArrayList(Arrays.asList(new String[]{"one", "", "three"})); System.out.print(l.indexOf("three"));
+)1
+)3
+)0
+)2
+
+53* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new ArrayList(); l.add("Object"); System.out.print(l.get(0));
+)Object
+)java.lang.UnsupportedOperationException
+)null
+)-1
+
+54* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new ArrayList(Arrays.asList(new String[]{"one", "", "three"})); System.out.print(l.subList(0, 4));
+)java.lang.UnsupportedOperationException
+)java.lang.IndexOutOfBoundsException
+)null
+)-1
+
+55* Результат виконання наступного Java коду співпадає із значенням виразу: System.out.println((new Object(){int x = 1; int getX(){int x=10; return x;}}).getX());
+)1
+)null
+)java.lang.UnsupportedOperationException
+)10
+
+56* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new LinkedList(); System.out.print(l.get(0));
+)java.lang.IndexOutOfBoundsException
+)0
+)-1
+)null
+
+57* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new LinkedList(Arrays.asList(new String[]{"one", "_", "three"})); l.add(1, new Object()); System.out.print(l.get(2));
+)one
+)three
+)[]
+)_
+
+58* Результат виконання наступного Java коду співпадає із значенням виразу: ArrayList.class.getSuperclass().getSuperclass().getName()
+)java.util.AbstractCollection
+)List
+)ArrayList
+)LinkedList
+
+59* Результат виконання наступного Java коду співпадає із значенням виразу: (new int[] { 1, 2, 3 }).length
+)1
+)3
+)2
+)0
+
+60* Результат виконання наступного Java коду співпадає із значенням виразу: (new int[] { 1, 2, 3 })[3]
+)0
+)java.lang.ArrayIndexOutOfBoundsException
+)null
+)-1
+
+61* Результат виконання наступного Java коду співпадає із значенням виразу: List<String> l = Arrays.asList(new String[]{"one", "", "three"}); l.remove(""); System.out.print(l.size());
+)java.lang.UnsupportedOperationException
+)0
+)[]
+)null
+
+62* Результат виконання наступного Java коду співпадає із значенням виразу: Map<String, String> m = new HashMap<>(); m.put("language", "Java"); System.out.print(m.isEmpty());
+)f
+)false
+)F
+).t.
+
+63* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new ArrayList(Arrays.asList(new String[]{"one", "", "three"})); l.add(1, new Object()); System.out.print(l.size());
+)4
+)3
+)null
+)java.lang.UnsupportedOperationException
+
+64* Результат виконання наступного Java коду співпадає із значенням виразу: String s = "Hello"; System.out.println(s.indexOf('l'));
+)3
+)2,3
+)ll
+)2
+
+65* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new ArrayList(Arrays.asList(new String[]{"one", "", "three"})); l.add(1, new Object()); System.out.print(l.get(3));
+)one
+)three
+)[]
+)null
+
+66* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new ArrayList(Arrays.asList(new String[]{"one", "", "three"})); l.add(1, new Object()); System.out.print(l.get(4));
+)-1
+)null
+)three
+)java.lang.IndexOutOfBoundsException
+
+67* Результат виконання наступного Java коду співпадає із значенням виразу: Set<String> s = new HashSet<>(); s.add("hello"); s.add("world"); System.out.print(s.toString());
+)[world, hello]
+)[]
+)[hello, world]
+)null
+
+68* Результат виконання наступного Java коду співпадає із значенням виразу: (new Object(){public int field = 4;}).getClass().getField("field").getType()
+)Integer
+)Number
+)Object
+)int
+
+69* Результат виконання наступного Java коду співпадає із значенням виразу: String s = "Hello"; System.out.println(s.substring(2));
+)lo
+)llo
+)ello
+)java.lang.UnsupportedOperationException
+
+70* Результат виконання наступного Java коду співпадає із значенням виразу: Set<String> s = new HashSet<>(); s.add("world"); s.add("hello"); System.out.print(s.contains("_"));
+)true
+)T
+)false
+)no
+
+71* Результат виконання наступного Java коду співпадає із значенням виразу: (new Character((char)3)).getClass().isPrimitive()
+)true
+)false
+)F
+)T
+
+72* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new ArrayList(Arrays.asList(new String[]{"one", "_", "three"})); l.add(1, new Object()); System.out.print(l.get(2));
+)one
+)_
+)three
+)null
+
+73* Результат виконання наступного Java коду співпадає із значенням виразу: Set<String> s = new HashSet<>(); s.add("world"); System.out.print(s.isEmpty());
+)true
+)false
+)F
+)TRUE
+
+74* Результат виконання наступного Java коду співпадає із значенням виразу: String s = "Hello"; System.out.println(s.equalsIgnoreCase("hello"));
+)false
+)f
+)no
+)YES
+
+75* Результат виконання наступного Java коду співпадає із значенням виразу: for(int i = 1, a = 6;;) if ( (a < 9 ) || (++i < 8) || (1/0 < 9 )  ) { i = i + 1; System.out.println(i); break;}
+)6
+)2
+)4
+)1
+
+76* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new ArrayList(Arrays.asList(new String[]{"one", "", "three"})); l.add("four"); System.out.print(l.size());
+)3
+)4
+)2
+)1
+
+77* Результат виконання наступного Java коду співпадає із значенням виразу: List l = new ArrayList(Arrays.asList(new String[]{"one", "", "three"})); System.out.print(l.subList(2, -1));
+)null
+)java.lang.IllegalArgumentException
+)false
+)0
+
+78* Результат виконання наступного Java коду співпадає із значенням виразу: String s = "Hello"; System.out.println(s.endsWith("ello"));
+)t
+)f
+)true
+)-
+
+79* Результат виконання наступного Java коду співпадає із значенням виразу: ((Object)'3').getClass()
+)Ch
+)class java.lang.Character
+)char
+)String
+
+80* Результат виконання наступного Java коду співпадає із значенням виразу: System.out.println((new Object(){int x = 1; int getX(){int x=10; return this.x;}}).getX());
+)10
+)0
+)java.lang.UnsupportedOperationException
+)1
+
+81* Результат виконання наступного Java коду співпадає із значенням виразу: Map<String, String> m = new HashMap<>(); m.put("language", "Java"); System.out.print(m.size());
+)2
+)1
+)23
+)-1
+
+82* Результат виконання наступного Java коду співпадає із значенням виразу: Set<String> s = new HashSet<>(); s.add("world"); s.add("hello"); System.out.print(s.toString());
+)[world, hello]
+)[hello, world]
+)[]
+)null
+
+83* Результат виконання наступного Java коду співпадає із значенням виразу: Map<String, String> m = new HashMap<>(); m.put("language", "Java"); System.out.print(m.getClass());
+)Map
+)class java.util.HashMap
+)Hash
+)Object
+
+84* Enum дозволяе створити таку кількість об'єктів
+)1
+)дорівнює кількості констант
+)0
+)нескінчено
+
+85* Корректний синтаксис дженерік сету
+)Set<Integer> mySet;
+)<Set>Integer mySet;
+)Set<?> mySet;
+)Set{Integer} mySet;
+
+86* Корректний синтаксис дженерік списку
+)List<Integer> mySet;
+)<List>Integer mySet;
+)List<?> mySet;
+)List{Integer} mySet;
+
+87* Корректний синтаксис дженерік мепу
+)Map<Integer> mySet;
+)<Map>Integer mySet;
+)Map<Integer, String> mySet;
+)Map{Integer} mySet;
+
+88* Даний фрагмент коду <uses-permission android:name="android.permission.INTERNET"/> належить до:
+)маніфесту Андроїд додатку
+)системи Graidle builds
+)ресурсів
+)джава коду
+
+89* Даний фрагмент коду <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> належить до:
+)маніфесту Андроїд додатку
+)системи Graidle builds
+)ресурсів
+)джава коду
+
+90* Даний фрагмент коду <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> належить до:
+)маніфесту Андроїд додатку
+)системи Graidle builds
+)ресурсів
+)джава коду
+
+91* Даний фрагмент коду compile 'com.android.support:appcompat-v7:25.4.0' належить до:
+)маніфесту Андроїд додатку
+)системи Graidle builds
+)ресурсів
+)джава коду
+
+92* Даний фрагмент кодуcompile 'com.android.support:design:25.4.0' належить до:
+)маніфесту Андроїд додатку
+)системи Graidle builds
+)ресурсів
+)джава коду
+
+93* Даний фрагмент коду compileSdkVersion 25 належить до:
+)маніфесту Андроїд додатку
+)системи Graidle builds
+)ресурсів
+)джава коду
+
+94* Даний фрагмент коду buildToolsVersion "25.0.2" належить до:
+)маніфесту Андроїд додатку
+)системи Graidle builds
+)ресурсів
+)джава коду
+
+95* Даний фрагмент коду minSdkVersion 14 належить до:
+)маніфесту Андроїд додатку
+)системи Graidle builds
+)ресурсів
+)джава коду
+
+96* Даний фрагмент коду targetSdkVersion 14 належить до:
+)маніфесту Андроїд додатку
+)системи Graidle builds
+)ресурсів
+)джава коду
+
+97* Даний фрагмент коду versionCode 1 належить до:
+)маніфесту Андроїд додатку
+)системи Graidle builds
+)ресурсів
+)джава коду
+
+98* Даний фрагмент коду versionName "1.0" належить до:
+)маніфесту Андроїд додатку
+)системи Graidle builds
+)ресурсів
+)джава коду
+
+99* public class MainActivity extends AppCompatActivity
+)використовується для віконних інтерфейсів і обслуговує екран пристою
+)використовується для перехоплення певної події
+)використовується для виконняння фонових обчислень та довгих операцій
+)використовується для надання даних зовнішнім додаткам
+
+100* public class RegistrationReceiver extends BroadcastReceiver
+)використовується для віконних інтерфейсів і обслуговує екран пристою
+)використовується для перехоплення певної події
+)використовується для виконняння фонових обчислень та довгих операцій
+)використовується для надання даних зовнішнім додаткам
+
+101* public class MusicService extends Service
+)використовується для віконних інтерфейсів і обслуговує екран пристою
+)використовується для перехоплення певної події
+)використовується для виконняння фонових обчислень та довгих операцій
+)використовується для надання даних зовнішнім додаткам
+
+102* public class AlgorithmBundleProvider extends OrmLiteSimpleContentProvider<ContentProviderDBHelper>
+)використовується для віконних інтерфейсів і обслуговує екран пристою
+)використовується для перехоплення певної події
+)використовується для виконняння фонових обчислень та довгих операцій
+)використовується для надання даних зовнішнім додаткам
+
+103* Архітектура Android складається з:
+)applications, application framework, libraries, Android runtime, Linux kernel
+)applications, telephony manager, libraries, Android runtime
+)applications, telephony manager, libraries, Linux kernel
+)telephony manager, libraries, Android runtime, Linux kernel
+
+104* Як називається Java Virtual Machine в Android?
+)Juke Virtual Machine
+)Parrot Virtual Machine
+).NET Framework
+)Dalvik
+
+105* Android Service ...
+)працює без User interface
+)працює коли User interface є активним
+)виконує телелефонні дзвінки
+)створює user interface
+

@@ -16,7 +16,7 @@
 <% end %>
 
 <% Comment.where(object: @product).each do |comment| %>
-<br>User:
-<%= comment.user.email.split('@').first %><br>:
+<br>User: 
+<%= comment.user.email.split('@').first %><br>
 <%=comment.text%><hr>
 <%end%>
